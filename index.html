@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ASBA Per Diem and Expense Claim Form</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/customCSS.css">
+	<style>.twrap { width: 100%; overflow-x: auto;text-align: left; } </style>
+	<style> .content-table {
+            margin: 0 auto; /* Center the table horizontally */
+		} </style>
+	<style>
+    .highlight-error {
+        border-color: red;
+    }
+</style>
+	<script src="https://kit.fontawesome.com/959ce9b698.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+	<style> .fa-pen-to-square, .fa-trash { cursor: pointer;   }</style>
+
+  </head>
+  <body>
+<div class="jumbotron jumbotron-fluid text-center col-md-11 offset-xl-1 col-xl-10" style="background-color: #FFFFFF; padding-top: 1rem; padding-bottom: 1rem;">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-md-4 text-md-left mb-3 mb-md-0 col-xl-2">
+                <img src="images/ASBA Logo_smaller.jpg" class="img-fluid" alt="Placeholder image" style="max-width: 100%; height: auto;">
+            </div> -->
+            <div class="col-md-8 col-xl-10">
+                <h1 class="display-4" style="font-size: 2.5rem; margin-bottom: 0.5rem;"><strong>ASBA Per Diem and Claim Form</strong></h1>
+                <p class="lead" style="font-size: 1rem; margin-bottom: 0.5rem;">Alberta School Boards Association<br>
+                    Suite 1200, 9925-109 Street NW, Edmonton, AB T5K 2J8</p>
+                <p class="mb-0" style="font-size: 0.8rem;">(Submit only once WITH RECEIPTS by mail or email to finance@asba.ab.ca)</p>
+            </div>
+        </div>
+    </div>
+</div>
+	  
+	  
+ <h4 class="col-md-11 offset-xl-1 col-xl-10">Instructions</h4>	  
+<div class="mt-4 p-3 col-md-11 offset-xl-1 col-xl-10" style="background-color: #f0f8ff;">
+       
+        
+        1. Click 'Save PDF' button at the bottom to save this form as a PDF file on your device
+        <br>
+        2. Complete all fields sequentially <br>
+        3. Click on 'certify form' checkbox <br>
+        4. Email the saved PDF file along with the RECEIPTS to finance@asba.ab.ca
+    </div>
+	  <br>
+	  <br>
+<header>
+        <h4 class="col-md-11 offset-xl-1 col-xl-10">Personal Details</h4>
+        <form id="form1" name="form1" method="post" class="mt-3 p-3 col-md-11 offset-xl-1 col-xl-10" style="background-color: #f0f8ff;">
+        <div class="form-row">
+    <div class="form-group col-md-4">
+        <label for="date2"><strong>Date Claim Submitted</strong></label>
+        <input type="date" class="form-control" name="date2" id="date2" required>
+    </div>
+    <div class="form-group col-md-4">
+        <label for="textfield4"><strong>Full Name</strong></label>
+        <input type="text" class="form-control" name="textfield4" id="textfield4" required>
+    </div>
+    <div class="form-group col-md-4">
+        <label for="email2"><strong>Email</strong></label>
+        <input type="email" class="form-control" name="email2" id="email2" required>
+    </div>
+</div>
+
+<div class="form-row">
+    <div class="form-group col-md-8">
+        <label for="textfield5"><strong>Address (including postal code)</strong></label>
+        <input type="text" class="form-control" name="textfield5" id="textfield5" required>
+    </div>
+
+    <div class="form-group col-md-4">
+        <label for="select"><strong>Please select your position</strong></label>
+        <select class="form-control" name="position" id="select" required>
+            <option value="Select an option">Select an option</option>
+            <option value="bod">Board of Directors' Member - 700</option>
+            <option value="president">President - 710</option>
+            <option value="vicepresident">Vice - President - 705</option>
+            <option value="trustee">Trustee</option>
+            <option value="others">Others</option>
+        </select>
+    </div>
+</div>
+</form><div class="col-md-11 offset-xl-1 col-xl-10">
+<br>
+<h4 id="claimFormsHeader">
+    Claim Forms (Click on each type to fill in the details)
+    <a href="#" onclick="expandAllAccordions()">Expand All</a>
+</h4>
+	<br>
+	
+<div id="accordion1" role="tablist">
+    <div class="card" style="background-color: #f0f8ff;">
+        <div class="card-header" role="tab" id="headingOne1">
+            <h6 class="mb-0">
+                <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1">
+                    PER DIEM CLAIM FORM
+                    <i class="fas fa-chevron-down float-right"></i>
+                </a>
+            </h6>
+        </div>
+        <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
+            <div class="card-body">
+	        <h5 class="text-center">PER DIEM</h5>
+	        <div class="container mt-5">
+    <form id="form2" name="form1" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="perdiemdate"><strong>Date of event</strong></label>
+                <input type="date" class="form-control" name="date" id="perdiemdate" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="perDiemEvent"><strong>Select the event</strong></label>
+                <select class="form-control" name="eventperdiem" id="perDiemEvent" required>
+                    <option value="Select an option">Select an option</option>
+                    <option value="Board of Directors' - Advocacy Committee">Board of Directors' - Advocacy Committee</option>
+                    <option value="Board of Directors' - Audit and Risk Management">Board of Directors' - Audit & Risk Management</option>
+                    <option value="Board of Directors' - Board Chairs Meeting">Board of Directors' - Board Chairs Meeting</option>
+                    <option value="Board of Directors' - Budget Committee">Board of Directors' - Budget Committee</option>
+                    <option value="Board of Directors' - Development/Conferences">Board of Directors' - Development/Conferences</option>
+                    <option value="Board of Directors' - Evaluation">Board of Directors' - Evaluation</option>
+                    <option value="Board of Directors' - Regular/Special">Board of Directors' - Regular/Special</option>
+                    <option value="Board of Directors' - Strategic Planning">Board of Directors' - Strategic Planning</option>
+                    <option value="Board of Directors' - Zone Attendance">Board of Directors' - Zone Attendance</option>
+                    <option value="ASBIE Insurance Board">ASBIE Insurance Board</option>
+                    <option value="ASEBP Insurance Board">ASEBP Insurance Board</option>
+                    <option value="Committee Work - Other">Committee Work - Other</option>
+                    <option value="CSBA">CSBA</option>
+                    <option value="First Nation, Métis, Inuit Partnership">First Nation, Métis, Inuit Partnership</option>
+                    <option value="Governance Task Force">Governance Task Force</option>
+                    <option value="LAPP">LAPP</option>
+                    <option value="NSBA">NSBA</option>
+                    <option value="Other Partner Events">Other Partner Events</option>
+                    <option value="PDAC">PDAC</option>
+                    <option value="Rural Education Symposium">Rural Education Symposium</option>
+                    <option value="SiPP Governance Board">SiPP Governance Board</option>
+                    <option value="Work of the President (as per Guidelines)">Work of the President (as per Guidelines)</option>
+                    <option value="Work of the Vice-President (as per Guidelines)">Work of the Vice-President (as per Guidelines)</option>
+                    <option value="Zone Chairs/Vice-Chairs">Zone Chairs/Vice-Chairs</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="eventDescription"><strong>Brief Description</strong></label>
+                <input type="text" class="form-control" name="eventDescription" id="eventDescription" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="travelhours"><strong>Enter travel hours</strong></label>
+                <input type="number" class="form-control" name="travelhours" id="travelhours" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="meetinghours"><strong>Enter meeting hours</strong></label>
+                <input type="number" class="form-control" name="meetinghours" id="meetinghours" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="whetherchair"><strong>Did you chair the meeting</strong></label>
+                <select class="form-control" name="whetherchair" id="whetherchair" required>
+                    <option value="Select an option">Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="btn-addevent" onclick="onFormSubmit()"> Add Event </button>
+        </div>
+    </form>
+</div>
+	        <br>
+			  
+		<div id = "perDiemTable2" class = "twrap">
+			<table class="content-table" id="perDiemTable">
+        <thead>
+            <tr>
+                <th>Date of event</th>
+                <th>Event Name</th>
+                <th>Description</th>
+                <th>Meeting Chair</th>
+                <th>Travel Hours</th>
+                <th>Meeting Hours</th>
+                <!-- <th>Travel-Half days</th>
+                <th>Travel-Full days</th>
+                <th>Meeting-Half days</th>
+                <th>Meeting-Full days</th> -->
+                <th>Total Per Diem</th>                
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+		<tr id="totalPerDiemRow">
+    		<td colspan="6"><strong>Total Per Diem:</strong></td>
+    		<td id="totalPerDiemValue"></td>
+		</tr>
+    </table>
+			  
+		</div>	
+		
+	      
+			
+			
+			
+			
+			
+			
+			
+			</div>
+        </div>
+    </div>
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingTwo1">
+	      <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1"> MEALS EXPENSE CLAIM </a> </h6>
+        </div>
+	    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
+	      <div class="card-body">Content for Accordion Panel 2</div>
+        </div>
+    </div>
+	  <div class="card" style="background-color: #f0f8ff;">
+	    <div class="card-header" role="tab" id="headingThree1">
+	      <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1"> ACCOMMODATION EXPENSE CLAIM </a> </h6>
+        </div>
+	    <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
+	      <div class="card-body">Content for Accordion Panel 3</div>
+        </div>
+    </div>
+	  <div class="card">
+	    <div class="card-header" role="tab" id="headingFour1">
+	      <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFour1" role="button" aria-expanded="false" aria-controls="collapseFour1"> TRAVEL EXPENSE CLAIM </a> </h6>
+        </div>
+	    <div id="collapseFour1" class="collapse" role="tabpanel" aria-labelledby="headingFour1" data-parent="#accordion1">
+	      <div class="card-body">Content for Accordion Panel 3</div>
+        </div>
+    </div>
+	  <div class="card" style="background-color: #f0f8ff;">
+	    <div class="card-header" role="tab" id="headingFive1">
+	      <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFive1" role="button" aria-expanded="false" aria-controls="collapseFive1"> MISCELLANEOUS EXPENSE CLAIM </a> </h6>
+        </div>
+	    <div id="collapseFive1" class="collapse" role="tabpanel" aria-labelledby="headingFive1" data-parent="#accordion1">
+	      <div class="card-body">Content for Accordion Panel 3</div>
+        </div>
+    </div>
+  </div>
+</div>
+	  
+<!-- "Export PDF" button -->
+<div class="d-flex justify-content-center mt-3 col-md-11 offset-xl-1 col-xl-10">
+    <button class="btn btn-primary btn-lg" id="exportButton" >Export PDF</button>
+	
+
+</div>
+	<br>
+	<br>
+	<br>
+<script>
+    function exportToPDF() {
+        console.log("Exporting started...")    
+		var element = document.body; // Choose the element you want to export
+			
+			console.log(element);
+            // Configure the PDF options (optional)
+            var options = {
+			margin: 10,
+			filename: 'exported-document.pdf',
+			image: { type: 'jpeg', quality: 0.98 },
+			html2canvas: { scale: 2 },
+			jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+			};
+
+            // Use html2pdf library to generate the PDF
+            html2pdf(element, options);
+			console.log("Exporting complete...");
+        }
+
+    document.getElementById("exportButton").addEventListener("click", exportToPDF);
+	
+</script>
+	  
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
